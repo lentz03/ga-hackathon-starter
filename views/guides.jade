@@ -1,0 +1,461 @@
+doctype html
+meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='Description', content='A list of tips and counters for Dota 2 heroes.')
+    link(href='https://fonts.googleapis.com/css?family=Cabin|Hind|Fjalla+One|Kalam', rel='stylesheet', type='text/css')
+    link(rel='shortcut icon', href='/favicon.png')
+    link(rel='stylesheet', href='/css/main.css')
+    title Hero Tips and Counters
+    link(rel='stylesheet', href='/assets/styles/normalize.css')
+    link(rel='stylesheet', href='/assets/styles/style.css')
+    link(rel='stylesheet', href='/assets/styles/minimap-icons.css')
+    link(rel='apple-touch-icon', sizes='57x57', href='/assets/media/icons/apple-touch-icon-57x57.png')
+    link(rel='apple-touch-icon', sizes='60x60', href='/assets/media/icons/apple-touch-icon-60x60.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='/assets/media/icons/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='76x76', href='/assets/media/icons/apple-touch-icon-76x76.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='/assets/media/icons/apple-touch-icon-114x114.png')
+    link(rel='apple-touch-icon', sizes='120x120', href='/assets/media/icons/apple-touch-icon-120x120.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='/assets/media/icons/apple-touch-icon-144x144.png')
+    link(rel='apple-touch-icon', sizes='152x152', href='/assets/media/icons/apple-touch-icon-152x152.png')
+    link(rel='apple-touch-icon', sizes='180x180', href='/assets/media/icons/apple-touch-icon-180x180.png')
+    link(rel='icon', type='image/png', href='/assets/media/icons/favicon-32x32.png', sizes='32x32')
+    link(rel='icon', type='image/png', href='/assets/media/icons/favicon-194x194.png', sizes='194x194')
+    link(rel='icon', type='image/png', href='/assets/media/icons/favicon-96x96.png', sizes='96x96')
+    link(rel='icon', type='image/png', href='/assets/media/icons/android-chrome-192x192.png', sizes='192x192')
+    link(rel='icon', type='image/png', href='/assets/media/icons/favicon-16x16.png', sizes='16x16')
+    link(rel='manifest', href='/manifest.json')
+    link(rel='mask-icon', href='/assets/media/icons/safari-pinned-tab.svg', color='#5bbad5')
+    link(rel='shortcut icon', href='/assets/media/icons/favicon.ico')
+    meta(name='apple-mobile-web-app-title', content='howdoiplay')
+    meta(name='application-name', content='howdoiplay')
+    meta(name='msapplication-TileColor', content='#ee3c37')
+    meta(name='msapplication-TileImage', content='/assets/media/icons/mstile-144x144.png')
+    meta(name='msapplication-config', content='/assets/media/icons/browserconfig.xml')
+    meta(name='theme-color', content='#ee3c37')
+    link(rel='search', type='application/opensearchdescription+xml', href='/assets/opensearch.xml', title='howdoiplay.com Search')
+    script.
+      !function (global) {
+      global.PATCH = '6.88';
+      global.HEROES = [
+      'Abaddon', 'Alchemist', 'Ancient Apparition', 'Anti-Mage', 'Arc Warden', 'Axe', 'Bane', 'Batrider',
+      'Beastmaster', 'Bloodseeker', 'Bounty Hunter', 'Brewmaster', 'Bristleback', 'Broodmother',
+      'Centaur Warrunner', 'Chaos Knight', 'Chen', 'Clinkz', 'Clockwerk', 'Crystal Maiden', 'Dark Seer', 'Dazzle',
+      'Death Prophet', 'Disruptor', 'Doom', 'Dragon Knight', 'Drow Ranger', 'Earth Spirit', 'Earthshaker',
+      'Elder Titan', 'Ember Spirit', 'Enchantress', 'Enigma', 'Faceless Void', 'Gyrocopter', 'Huskar',
+      'Invoker', 'Io', 'Jakiro', 'Juggernaut', 'Keeper of the Light', 'Kunkka', 'Legion Commander',
+      'Leshrac', 'Lich', 'Lifestealer', 'Lina', 'Lion', 'Lone Druid', 'Luna', 'Lycan', 'Magnus', 'Medusa',
+      'Meepo', 'Mirana', 'Morphling', 'Naga Siren', 'Nature\\'s Prophet', 'Necrophos', 'Night Stalker',
+      'Nyx Assassin', 'Ogre Magi', 'Omniknight', 'Oracle', 'Outworld Devourer', 'Phantom Assassin',
+      'Phantom Lancer', 'Phoenix', 'Puck', 'Pudge', 'Pugna', 'Queen of Pain', 'Razor', 'Riki', 'Rubick',
+      'Sand King', 'Shadow Demon', 'Shadow Fiend', 'Shadow Shaman', 'Silencer', 'Skywrath Mage', 'Slardar',
+      'Slark', 'Sniper', 'Spectre', 'Spirit Breaker', 'Storm Spirit', 'Sven', 'Techies', 'Templar Assassin',
+      'Terrorblade', 'Tidehunter', 'Timbersaw', 'Tinker', 'Tiny', 'Treant Protector', 'Troll Warlord', 'Tusk',
+      'Undying', 'Ursa', 'Vengeful Spirit', 'Venomancer', 'Viper', 'Visage', 'Warlock', 'Weaver', 'Windranger',
+      'Winter Wyvern', 'Witch Doctor', 'Wraith King', 'Zeus'
+      ];
+      }(window);
+    script.
+      (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-54725251-1', 'auto');
+      ga('send', 'pageview');
+  body
+    include partials/header
+    .wrapper
+      #inputline
+        form#heroinput-form(action='/', method='get')
+          span#hero-input-quote-start
+          span#heroinput
+            input.typeahead(type='text', placeholder='Hero Name', autocomplete='off')
+            span#randomhero
+              a(href='#', title='Random Hero (no bonus gold)') 
+            span.arrow
+          span#hero-input-quote-end
+          input(type='submit', value='', style='visibility: hidden; position: absolute; top: -9999px; left: -9999px; width: 1px; height: 1px; overflow: hidden')
+        script.
+          !function (document) {
+          var quotes = [
+          ["I JUST RANDOMED", ". NOW WHAT?"],
+          ["MY CAPTAIN PICKED ME", "AND NOW I'M PANICKING."],
+          ["I TOLD MY TEAM I KNOW HOW TO PLAY", "BUT I REALLY DON'T."],
+          ["I'M GETTING OWNED BY", ". WHAT DO?"],
+          ["CREEPS ARE SPAWNING. QUICK, TELL ME HOW TO", "."],
+          ["I'VE GOT 40 SECONDS TO LEARN HOW TO", "LIKE ICEICEICE."],
+          ["WHAT THE HELL IS A", "?"],
+          ["GOD DAMN IT, I'M SICK OF LOSING TO", "."],
+          ["I'VE NEVER PLAYED", "BEFORE. GUESS I'LL LEARN IN THIS RANKED MATCH."],
+          ["OF COURSE I KNOW HOW TO PLAY", ". I'M JUST REFRESHING MY MEMORY."],
+          ["HOW DO I COUNTER", "? DAGON 5, RIGHT?"],
+          ["HOW DO I COUNTER", "? STACK RAPIERS, RIGHT?"],
+          ["HOW DO I COUNTER", "? WARD THEIR JUNGLE, RIGHT?"],
+          ["ICEFROG PLS NERF", "."],
+          ["ICEFROG PLS BUFF", "."],
+          ["NO MORE 0% DOTABUFF WIN RATE ON", "FROM NOW ON."],
+          ["WHY DOES", "EVEN EXIST? GARBAGE HERO IMO."],
+          ["WHY I ALWAYS LOSE WITH", "? I COPY SING'S BUILDERINO PERFECT."],
+          ["THEY CALL ME THE ADMIRALBULLDOG OF", "."],
+          ["OH BOY, MY FIRST DRAFT!", "IS WEAK AGAINST GRASS TYPE, RIGHT?"],
+          ["BLESSED BE THY", ". GUIDE ME ON THIS RIGHTEOUS PATH TO 8K."],
+          ["MY STACK BANNED ME FROM PLAYING", ", BUT I'LL SHOW 'EM."],
+          ["ANYONE WANT TO SWAP FOR", "? NO? WELL I'M NOT REPICKING."],
+          ["GIVE ME THE SPARKNOTES ON PLAYING", "."],
+          ["I NEVER WIN WITH", ". I BLAME BAD TEAMMATES."],
+          ["BET ALL MY RARES AND GOT SOME DOPE", "HATS. TIME TO USE 'EM."],
+          ["TO REPICK IS TO ADMIT WEAKNESS.", "TRIAL BY FIRE."],
+          ["GOT AN UNTRADEABLE SET FOR", ". GUESS I'LL LEARN HOW TO PLAY 'EM."],
+          ["I'M PLAYING", "? <font color='green'>+25</font>, HERE I COME."],
+          ["I'M PLAYING", "? <font color='indianred'>-25</font>, HERE I COME."],
+          ["WHO NEEDS VERSATILITY? I'M THE", "MASTER."],
+          ["<img src='/assets/media/OSfrog.png'> LE BALANCED", "HERO <img src='/assets/media/OSfrog.png'>"]
+          ];
+          var randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+          document.getElementById('hero-input-quote-start').innerHTML = randomQuote[0];
+          document.getElementById('hero-input-quote-end').innerHTML = randomQuote[1];
+          }(document);
+      .grey
+        #tipcontainer
+        ul.herolist
+          li.herolist__hero.abaddon
+            a.herolist__hero__link(title='Abaddon', href='/tips/abaddon.html')
+              span.herolist__hero__name Abaddon
+          li.herolist__hero.alchemist
+            a.herolist__hero__link(title='Alchemist', href='/tips/alchemist.html')
+              span.herolist__hero__name Alchemist
+          li.herolist__hero.ancient_apparition
+            a.herolist__hero__link(title='Ancient Apparition', href='/tips/ancient_apparition.html')
+              span.herolist__hero__name Ancient Apparition
+          li.herolist__hero.anti-mage
+            a.herolist__hero__link(title='Anti-Mage', href='/tips/anti-mage.html')
+              span.herolist__hero__name Anti-Mage
+          li.herolist__hero.arc_warden
+            a.herolist__hero__link(title='Arc Warden', href='/tips/arc_warden.html')
+              span.herolist__hero__name Arc Warden
+          li.herolist__hero.axe
+            a.herolist__hero__link(title='Axe', href='/tips/axe.html')
+              span.herolist__hero__name Axe
+          li.herolist__hero.bane
+            a.herolist__hero__link(title='Bane', href='/tips/bane.html')
+              span.herolist__hero__name Bane
+          li.herolist__hero.batrider
+            a.herolist__hero__link(title='Batrider', href='/tips/batrider.html')
+              span.herolist__hero__name Batrider
+          li.herolist__hero.beastmaster
+            a.herolist__hero__link(title='Beastmaster', href='/tips/beastmaster.html')
+              span.herolist__hero__name Beastmaster
+          li.herolist__hero.bloodseeker
+            a.herolist__hero__link(title='Bloodseeker', href='/tips/bloodseeker.html')
+              span.herolist__hero__name Bloodseeker
+          li.herolist__hero.bounty_hunter
+            a.herolist__hero__link(title='Bounty Hunter', href='/tips/bounty_hunter.html')
+              span.herolist__hero__name Bounty Hunter
+          li.herolist__hero.brewmaster
+            a.herolist__hero__link(title='Brewmaster', href='/tips/brewmaster.html')
+              span.herolist__hero__name Brewmaster
+          li.herolist__hero.bristleback
+            a.herolist__hero__link(title='Bristleback', href='/tips/bristleback.html')
+              span.herolist__hero__name Bristleback
+          li.herolist__hero.broodmother
+            a.herolist__hero__link(title='Broodmother', href='/tips/broodmother.html')
+              span.herolist__hero__name Broodmother
+          li.herolist__hero.centaur_warrunner
+            a.herolist__hero__link(title='Centaur Warrunner', href='/tips/centaur_warrunner.html')
+              span.herolist__hero__name Centaur Warrunner
+          li.herolist__hero.chaos_knight
+            a.herolist__hero__link(title='Chaos Knight', href='/tips/chaos_knight.html')
+              span.herolist__hero__name Chaos Knight
+          li.herolist__hero.chen
+            a.herolist__hero__link(title='Chen', href='/tips/chen.html')
+              span.herolist__hero__name Chen
+          li.herolist__hero.clinkz
+            a.herolist__hero__link(title='Clinkz', href='/tips/clinkz.html')
+              span.herolist__hero__name Clinkz
+          li.herolist__hero.clockwerk
+            a.herolist__hero__link(title='Clockwerk', href='/tips/clockwerk.html')
+              span.herolist__hero__name Clockwerk
+          li.herolist__hero.crystal_maiden
+            a.herolist__hero__link(title='Crystal Maiden', href='/tips/crystal_maiden.html')
+              span.herolist__hero__name Crystal Maiden
+          li.herolist__hero.dark_seer
+            a.herolist__hero__link(title='Dark Seer', href='/tips/dark_seer.html')
+              span.herolist__hero__name Dark Seer
+          li.herolist__hero.dazzle
+            a.herolist__hero__link(title='Dazzle', href='/tips/dazzle.html')
+              span.herolist__hero__name Dazzle
+          li.herolist__hero.death_prophet
+            a.herolist__hero__link(title='Death Prophet', href='/tips/death_prophet.html')
+              span.herolist__hero__name Death Prophet
+          li.herolist__hero.disruptor
+            a.herolist__hero__link(title='Disruptor', href='/tips/disruptor.html')
+              span.herolist__hero__name Disruptor
+          li.herolist__hero.doom
+            a.herolist__hero__link(title='Doom', href='/tips/doom.html')
+              span.herolist__hero__name Doom
+          li.herolist__hero.dragon_knight
+            a.herolist__hero__link(title='Dragon Knight', href='/tips/dragon_knight.html')
+              span.herolist__hero__name Dragon Knight
+          li.herolist__hero.drow_ranger
+            a.herolist__hero__link(title='Drow Ranger', href='/tips/drow_ranger.html')
+              span.herolist__hero__name Drow Ranger
+          li.herolist__hero.earth_spirit
+            a.herolist__hero__link(title='Earth Spirit', href='/tips/earth_spirit.html')
+              span.herolist__hero__name Earth Spirit
+          li.herolist__hero.earthshaker
+            a.herolist__hero__link(title='Earthshaker', href='/tips/earthshaker.html')
+              span.herolist__hero__name Earthshaker
+          li.herolist__hero.elder_titan
+            a.herolist__hero__link(title='Elder Titan', href='/tips/elder_titan.html')
+              span.herolist__hero__name Elder Titan
+          li.herolist__hero.ember_spirit
+            a.herolist__hero__link(title='Ember Spirit', href='/tips/ember_spirit.html')
+              span.herolist__hero__name Ember Spirit
+          li.herolist__hero.enchantress
+            a.herolist__hero__link(title='Enchantress', href='/tips/enchantress.html')
+              span.herolist__hero__name Enchantress
+          li.herolist__hero.enigma
+            a.herolist__hero__link(title='Enigma', href='/tips/enigma.html')
+              span.herolist__hero__name Enigma
+          li.herolist__hero.faceless_void
+            a.herolist__hero__link(title='Faceless Void', href='/tips/faceless_void.html')
+              span.herolist__hero__name Faceless Void
+          li.herolist__hero.gyrocopter
+            a.herolist__hero__link(title='Gyrocopter', href='/tips/gyrocopter.html')
+              span.herolist__hero__name Gyrocopter
+          li.herolist__hero.huskar
+            a.herolist__hero__link(title='Huskar', href='/tips/huskar.html')
+              span.herolist__hero__name Huskar
+          li.herolist__hero.invoker
+            a.herolist__hero__link(title='Invoker', href='/tips/invoker.html')
+              span.herolist__hero__name Invoker
+          li.herolist__hero.io
+            a.herolist__hero__link(title='Io', href='/tips/io.html')
+              span.herolist__hero__name Io
+          li.herolist__hero.jakiro
+            a.herolist__hero__link(title='Jakiro', href='/tips/jakiro.html')
+              span.herolist__hero__name Jakiro
+          li.herolist__hero.juggernaut
+            a.herolist__hero__link(title='Juggernaut', href='/tips/juggernaut.html')
+              span.herolist__hero__name Juggernaut
+          li.herolist__hero.keeper_of_the_light
+            a.herolist__hero__link(title='Keeper of the Light', href='/tips/keeper_of_the_light.html')
+              span.herolist__hero__name Keeper of the Light
+          li.herolist__hero.kunkka
+            a.herolist__hero__link(title='Kunkka', href='/tips/kunkka.html')
+              span.herolist__hero__name Kunkka
+          li.herolist__hero.legion_commander
+            a.herolist__hero__link(title='Legion Commander', href='/tips/legion_commander.html')
+              span.herolist__hero__name Legion Commander
+          li.herolist__hero.leshrac
+            a.herolist__hero__link(title='Leshrac', href='/tips/leshrac.html')
+              span.herolist__hero__name Leshrac
+          li.herolist__hero.lich
+            a.herolist__hero__link(title='Lich', href='/tips/lich.html')
+              span.herolist__hero__name Lich
+          li.herolist__hero.lifestealer
+            a.herolist__hero__link(title='Lifestealer', href='/tips/lifestealer.html')
+              span.herolist__hero__name Lifestealer
+          li.herolist__hero.lina
+            a.herolist__hero__link(title='Lina', href='/tips/lina.html')
+              span.herolist__hero__name Lina
+          li.herolist__hero.lion
+            a.herolist__hero__link(title='Lion', href='/tips/lion.html')
+              span.herolist__hero__name Lion
+          li.herolist__hero.lone_druid
+            a.herolist__hero__link(title='Lone Druid', href='/tips/lone_druid.html')
+              span.herolist__hero__name Lone Druid
+          li.herolist__hero.luna
+            a.herolist__hero__link(title='Luna', href='/tips/luna.html')
+              span.herolist__hero__name Luna
+          li.herolist__hero.lycan
+            a.herolist__hero__link(title='Lycan', href='/tips/lycan.html')
+              span.herolist__hero__name Lycan
+          li.herolist__hero.magnus
+            a.herolist__hero__link(title='Magnus', href='/tips/magnus.html')
+              span.herolist__hero__name Magnus
+          li.herolist__hero.medusa
+            a.herolist__hero__link(title='Medusa', href='/tips/medusa.html')
+              span.herolist__hero__name Medusa
+          li.herolist__hero.meepo
+            a.herolist__hero__link(title='Meepo', href='/tips/meepo.html')
+              span.herolist__hero__name Meepo
+          li.herolist__hero.mirana
+            a.herolist__hero__link(title='Mirana', href='/tips/mirana.html')
+              span.herolist__hero__name Mirana
+          li.herolist__hero.morphling
+            a.herolist__hero__link(title='Morphling', href='/tips/morphling.html')
+              span.herolist__hero__name Morphling
+          li.herolist__hero.naga_siren
+            a.herolist__hero__link(title='Naga Siren', href='/tips/naga_siren.html')
+              span.herolist__hero__name Naga Siren
+          li.herolist__hero.natures_prophet
+            a.herolist__hero__link(title="Nature's Prophet", href="/tips/nature's_prophet.html")
+              span.herolist__hero__name Nature's Prophet
+          li.herolist__hero.necrophos
+            a.herolist__hero__link(title='Necrophos', href='/tips/necrophos.html')
+              span.herolist__hero__name Necrophos
+          li.herolist__hero.night_stalker
+            a.herolist__hero__link(title='Night Stalker', href='/tips/night_stalker')
+              span.herolist__hero__name Night Stalker
+          li.herolist__hero.nyx_assassin
+            a.herolist__hero__link(title='Nyx Assassin', href='/tips/nyx_assassin')
+              span.herolist__hero__name Nyx Assassin
+          li.herolist__hero.ogre_magi
+            a.herolist__hero__link(title='Ogre Magi', href='/tips/ogre_magi.html')
+              span.herolist__hero__name Ogre Magi
+          li.herolist__hero.omniknight
+            a.herolist__hero__link(title='Omniknight', href='/tips/omniknight.html')
+              span.herolist__hero__name Omniknight
+          li.herolist__hero.oracle
+            a.herolist__hero__link(title='Oracle', href='/tips/oracle.html')
+              span.herolist__hero__name Oracle
+          li.herolist__hero.outworld_devourer
+            a.herolist__hero__link(title='Outworld Devourer', href='/tips/outworld_devourer.html')
+              span.herolist__hero__name Outworld Devourer
+          li.herolist__hero.phantom_assassin
+            a.herolist__hero__link(title='Phantom Assassin', href='/tips/phantom_assassin.html')
+              span.herolist__hero__name Phantom Assassin
+          li.herolist__hero.phantom_lancer
+            a.herolist__hero__link(title='Phantom Lancer', href='/tips/phantom_lancer.html')
+              span.herolist__hero__name Phantom Lancer
+          li.herolist__hero.phoenix
+            a.herolist__hero__link(title='Phoenix', href='/tips/phoenix.html')
+              span.herolist__hero__name Phoenix
+          li.herolist__hero.puck
+            a.herolist__hero__link(title='Puck', href='/tips/puck.html')
+              span.herolist__hero__name Puck
+          li.herolist__hero.pudge
+            a.herolist__hero__link(title='Pudge', href='/tips/pudge.html')
+              span.herolist__hero__name Pudge
+          li.herolist__hero.pugna
+            a.herolist__hero__link(title='Pugna', href='/tips/pugna.html')
+              span.herolist__hero__name Pugna
+          li.herolist__hero.queen_of_pain
+            a.herolist__hero__link(title='Queen of Pain', href='/tips/queen_of_pain.html')
+              span.herolist__hero__name Queen of Pain
+          li.herolist__hero.razor
+            a.herolist__hero__link(title='Razor', href='/tips/razor.html')
+              span.herolist__hero__name Razor
+          li.herolist__hero.riki
+            a.herolist__hero__link(title='Riki', href='/tips/riki.html')
+              span.herolist__hero__name Riki
+          li.herolist__hero.rubick
+            a.herolist__hero__link(title='Rubick', href='/tips/rubick.html')
+              span.herolist__hero__name Rubick
+          li.herolist__hero.sand_king
+            a.herolist__hero__link(title='Sand King', href='/tips/sand_king.html')
+              span.herolist__hero__name Sand King
+          li.herolist__hero.shadow_demon
+            a.herolist__hero__link(title='Shadow Demon', href='/tips/shadow_demon.html')
+              span.herolist__hero__name Shadow Demon
+          li.herolist__hero.shadow_fiend
+            a.herolist__hero__link(title='Shadow Fiend', href='/tips/shadow_fiend.html')
+              span.herolist__hero__name Shadow Fiend
+          li.herolist__hero.shadow_shaman
+            a.herolist__hero__link(title='Shadow Shaman', href='/tips/shadow_shaman.html')
+              span.herolist__hero__name Shadow Shaman
+          li.herolist__hero.silencer
+            a.herolist__hero__link(title='Silencer', href='/tips/silencer.html')
+              span.herolist__hero__name Silencer
+          li.herolist__hero.skywrath_mage
+            a.herolist__hero__link(title='Skywrath Mage', href='/tips/skywrath_mage.html')
+              span.herolist__hero__name Skywrath Mage
+          li.herolist__hero.slardar
+            a.herolist__hero__link(title='Slardar', href='/tips/slardar.html')
+              span.herolist__hero__name Slardar
+          li.herolist__hero.slark
+            a.herolist__hero__link(title='Slark', href='/tips/slark.html')
+              span.herolist__hero__name Slark
+          li.herolist__hero.sniper
+            a.herolist__hero__link(title='Sniper', href='/tips/sniper.html')
+              span.herolist__hero__name Sniper
+          li.herolist__hero.spectre
+            a.herolist__hero__link(title='Spectre', href='/tips/spectre.html')
+              span.herolist__hero__name Spectre
+          li.herolist__hero.spirit_breaker
+            a.herolist__hero__link(title='Spirit Breaker', href='/tips/spirit_breaker.html')
+              span.herolist__hero__name Spirit Breaker
+          li.herolist__hero.storm_spirit
+            a.herolist__hero__link(title='Storm Spirit', href='/tips/storm_spirit.html')
+              span.herolist__hero__name Storm Spirit
+          li.herolist__hero.sven
+            a.herolist__hero__link(title='Sven', href='/tips/sven.html')
+              span.herolist__hero__name Sven
+          li.herolist__hero.techies
+            a.herolist__hero__link(title='Techies', href='/tips/techies.html')
+              span.herolist__hero__name Techies
+          li.herolist__hero.templar_assassin
+            a.herolist__hero__link(title='Templar Assassin', href='/tips/templar_assassin.html')
+              span.herolist__hero__name Templar Assassin
+          li.herolist__hero.terrorblade
+            a.herolist__hero__link(title='Terrorblade', href='/tips/terrorblade.html')
+              span.herolist__hero__name Terrorblade
+          li.herolist__hero.tidehunter
+            a.herolist__hero__link(title='Tidehunter', href='/tips/tidehunter.html')
+              span.herolist__hero__name Tidehunter
+          li.herolist__hero.timbersaw
+            a.herolist__hero__link(title='Timbersaw', href='/tips/timbersaw.html')
+              span.herolist__hero__name Timbersaw
+          li.herolist__hero.tinker
+            a.herolist__hero__link(title='Tinker', href='/tips/tinker.html')
+              span.herolist__hero__name Tinker
+          li.herolist__hero.tiny
+            a.herolist__hero__link(title='Tiny', href='/tips/tiny.html')
+              span.herolist__hero__name Tiny
+          li.herolist__hero.treant_protector
+            a.herolist__hero__link(title='Treant Protector', href='/tips/treant_protector.html')
+              span.herolist__hero__name Treant Protector
+          li.herolist__hero.troll_warlord
+            a.herolist__hero__link(title='Troll Warlord', href='/tips/troll_warlord.html')
+              span.herolist__hero__name Troll Warlord
+          li.herolist__hero.tusk
+            a.herolist__hero__link(title='Tusk', href='/tips/tusk.html')
+              span.herolist__hero__name Tusk
+          li.herolist__hero.undying
+            a.herolist__hero__link(title='Undying', href='/tips/undying.html')
+              span.herolist__hero__name Undying
+          li.herolist__hero.ursa
+            a.herolist__hero__link(title='Ursa', href='/tips/ursa.html')
+              span.herolist__hero__name Ursa
+          li.herolist__hero.vengeful_spirit
+            a.herolist__hero__link(title='Vengeful Spirit', href='/tips/vengeful_spirit.html')
+              span.herolist__hero__name Vengeful Spirit
+          li.herolist__hero.venomancer
+            a.herolist__hero__link(title='Venomancer', href='/tips/venomancer.html')
+              span.herolist__hero__name Venomancer
+          li.herolist__hero.viper
+            a.herolist__hero__link(title='Viper', href='/tips/viper.html')
+              span.herolist__hero__name Viper
+          li.herolist__hero.visage
+            a.herolist__hero__link(title='Visage', href='/tips/visage.html')
+              span.herolist__hero__name Visage
+          li.herolist__hero.warlock
+            a.herolist__hero__link(title='Warlock', href='/tips/warlock.html')
+              span.herolist__hero__name Warlock
+          li.herolist__hero.weaver
+            a.herolist__hero__link(title='Weaver', href='/tips/weaver.html')
+              span.herolist__hero__name Weaver
+          li.herolist__hero.windranger
+            a.herolist__hero__link(title='Windranger', href='/tips/windranger.html')
+              span.herolist__hero__name Windranger
+          li.herolist__hero.winter_wyvern
+            a.herolist__hero__link(title='Winter Wyvern', href='/tips/winter_wyvern.html')
+              span.herolist__hero__name Winter Wyvern
+          li.herolist__hero.witch_doctor
+            a.herolist__hero__link(title='Witch Doctor', href='/tips/witch_doctor.html')
+              span.herolist__hero__name Witch Doctor
+          li.herolist__hero.wraith_king
+            a.herolist__hero__link(title='Wraith King', href='/tips/wraith_king.html')
+              span.herolist__hero__name Wraith King
+          li.herolist__hero.zeus
+            a.herolist__hero__link(title='Zeus', href='/tips/zeus.html')
+              span.herolist__hero__name Zeus
