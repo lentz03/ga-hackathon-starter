@@ -6003,7 +6003,6 @@ button.close {
     .btn-steam {
       background-color: #444444;
       color: #fff;
-      margin-top: 5px;
       background-color: #444444;
       border-color: rgba(0, 0, 0, 0.2); }
       .btn-steam:focus, .btn-steam.focus {
@@ -6011,11 +6010,6 @@ button.close {
         background-color: #2b2b2b;
         border-color: rgba(0, 0, 0, 0.2); }
       .btn-steam:hover {
-        color: #fff;
-        background-color: #2b2b2b;
-        border-color: rgba(0, 0, 0, 0.2); }
-      .btn-steam:active, .btn-steam.active,
-      .open > .btn-github.dropdown-toggle {
         color: #fff;
         background-color: #2b2b2b;
         border-color: rgba(0, 0, 0, 0.2); }
