@@ -203,9 +203,9 @@ app.get('/auth/venmo', passport.authorize('venmo', { scope: 'make_payments acces
 app.get('/auth/venmo/callback', passport.authorize('venmo', { failureRedirect: '/api' }), (req, res) => {
   res.redirect('/api/venmo');
 });
-app.get('/auth/steam', passport.authorize('openid', { state: 'SOME STATE' }));
-app.get('/auth/steam/callback', passport.authorize('openid', { failureRedirect: '/login' }), (req, res) => {
-  res.redirect(req.session.returnTo || '/');
+app.get('/auth/steam', passport.authorize('steam', { state: 'SOME STATE' }));
+app.get('/auth/steam/callback', passport.authorize('steam', { failureRedirect: '/login' }), (req, res) => {
+  res.redirect('/guides');
 });
 app.get('/auth/pinterest', passport.authorize('pinterest', { scope: 'read_public write_public' }));
 app.get('/auth/pinterest/callback', passport.authorize('pinterest', { failureRedirect: '/login' }), (req, res) => {

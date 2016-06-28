@@ -8,7 +8,7 @@ const TwitterStrategy = require('passport-twitter').Strategy;
 const GitHubStrategy = require('passport-github').Strategy;
 const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 const LinkedInStrategy = require('passport-linkedin-oauth2').Strategy;
-const OpenIDStrategy = require('passport-openid').Strategy;
+const SteamStrategy = require('passport-steam').Strategy;
 const OAuthStrategy = require('passport-oauth').OAuthStrategy;
 const OAuth2Strategy = require('passport-oauth').OAuth2Strategy;
 
@@ -445,13 +445,13 @@ passport.use('venmo', new OAuth2Strategy({
 /**
  * Steam API OpenID.
  */
-passport.use(new OpenIDStrategy({
+passport.use('steam', new SteamStrategy({
   apiKey: process.env.STEAM_KEY,
   providerURL: 'http://steamcommunity.com/openid',
   returnURL: 'http://localhost:3000/auth/steam/callback',
   realm: 'http://localhost:3000/',
   stateless: true
-}, (identifier, done) => {
+}, (identifier, profile, done) => {
   const steamId = identifier.match(/\d+$/)[0];
   const profileURL = `http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${process.env.STEAM_KEY}&steamids=${steamId}`;
 

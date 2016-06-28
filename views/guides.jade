@@ -46,7 +46,7 @@ html
       'Elder Titan', 'Ember Spirit', 'Enchantress', 'Enigma', 'Faceless Void', 'Gyrocopter', 'Huskar',
       'Invoker', 'Io', 'Jakiro', 'Juggernaut', 'Keeper of the Light', 'Kunkka', 'Legion Commander',
       'Leshrac', 'Lich', 'Lifestealer', 'Lina', 'Lion', 'Lone Druid', 'Luna', 'Lycan', 'Magnus', 'Medusa',
-      'Meepo', 'Mirana', 'Morphling', 'Naga Siren', 'Nature\\'s Prophet', 'Necrophos', 'Night Stalker',
+      'Meepo', 'Mirana', 'Morphling', 'Naga Siren', 'Nature\'s Prophet', 'Necrophos', 'Night Stalker',
       'Nyx Assassin', 'Ogre Magi', 'Omniknight', 'Oracle', 'Outworld Devourer', 'Phantom Assassin',
       'Phantom Lancer', 'Phoenix', 'Puck', 'Pudge', 'Pugna', 'Queen of Pain', 'Razor', 'Riki', 'Rubick',
       'Sand King', 'Shadow Demon', 'Shadow Fiend', 'Shadow Shaman', 'Silencer', 'Skywrath Mage', 'Slardar',
@@ -72,7 +72,11 @@ html
       ga('send', 'pageview');
   body
     include partials/header
+    include partials/flash
     include partials/footer
+    script(src='/js/lib/jquery-2.2.0.min.js')
+    script(src='/js/lib/bootstrap.min.js')
+    script(src='/js/main.js')
     .wrapper
       #inputline
         form#heroinput-form(action='/', method='get')
