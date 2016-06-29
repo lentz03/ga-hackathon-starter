@@ -88,46 +88,6 @@ html
             span.arrow
           //- span#hero-input-quote-end
           input(type='submit', value='', style='visibility: hidden; position: absolute; top: -9999px; left: -9999px; width: 1px; height: 1px; overflow: hidden')
-        script.
-          !function (document) {
-          var quotes = [
-          ["I JUST RANDOMED", ". NOW WHAT?"],
-          ["MY CAPTAIN PICKED ME", "AND NOW I'M PANICKING."],
-          ["I TOLD MY TEAM I KNOW HOW TO PLAY", "BUT I REALLY DON'T."],
-          ["I'M GETTING OWNED BY", ". WHAT DO?"],
-          ["CREEPS ARE SPAWNING. QUICK, TELL ME HOW TO", "."],
-          ["I'VE GOT 40 SECONDS TO LEARN HOW TO", "LIKE ICEICEICE."],
-          ["WHAT THE HELL IS A", "?"],
-          ["GOD DAMN IT, I'M SICK OF LOSING TO", "."],
-          ["I'VE NEVER PLAYED", "BEFORE. GUESS I'LL LEARN IN THIS RANKED MATCH."],
-          ["OF COURSE I KNOW HOW TO PLAY", ". I'M JUST REFRESHING MY MEMORY."],
-          ["HOW DO I COUNTER", "? DAGON 5, RIGHT?"],
-          ["HOW DO I COUNTER", "? STACK RAPIERS, RIGHT?"],
-          ["HOW DO I COUNTER", "? WARD THEIR JUNGLE, RIGHT?"],
-          ["ICEFROG PLS NERF", "."],
-          ["ICEFROG PLS BUFF", "."],
-          ["NO MORE 0% DOTABUFF WIN RATE ON", "FROM NOW ON."],
-          ["WHY DOES", "EVEN EXIST? GARBAGE HERO IMO."],
-          ["WHY I ALWAYS LOSE WITH", "? I COPY SING'S BUILDERINO PERFECT."],
-          ["THEY CALL ME THE ADMIRALBULLDOG OF", "."],
-          ["OH BOY, MY FIRST DRAFT!", "IS WEAK AGAINST GRASS TYPE, RIGHT?"],
-          ["BLESSED BE THY", ". GUIDE ME ON THIS RIGHTEOUS PATH TO 8K."],
-          ["MY STACK BANNED ME FROM PLAYING", ", BUT I'LL SHOW 'EM."],
-          ["ANYONE WANT TO SWAP FOR", "? NO? WELL I'M NOT REPICKING."],
-          ["GIVE ME THE SPARKNOTES ON PLAYING", "."],
-          ["I NEVER WIN WITH", ". I BLAME BAD TEAMMATES."],
-          ["BET ALL MY RARES AND GOT SOME DOPE", "HATS. TIME TO USE 'EM."],
-          ["TO REPICK IS TO ADMIT WEAKNESS.", "TRIAL BY FIRE."],
-          ["GOT AN UNTRADEABLE SET FOR", ". GUESS I'LL LEARN HOW TO PLAY 'EM."],
-          ["I'M PLAYING", "? <font color='green'>+25</font>, HERE I COME."],
-          ["I'M PLAYING", "? <font color='indianred'>-25</font>, HERE I COME."],
-          ["WHO NEEDS VERSATILITY? I'M THE", "MASTER."],
-          ["<img src='/assets/media/OSfrog.png'> LE BALANCED", "HERO <img src='/assets/media/OSfrog.png'>"]
-          ];
-          var randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-          document.getElementById('hero-input-quote-start').innerHTML = randomQuote[0];
-          document.getElementById('hero-input-quote-end').innerHTML = randomQuote[1];
-          }(document);
       .grey
         #tipcontainer
         ul.herolist
@@ -309,10 +269,10 @@ html
             a.herolist__hero__link(title='Necrophos', href='/tips/necrophos.html')
               span.herolist__hero__name Necrophos
           li.herolist__hero.night_stalker
-            a.herolist__hero__link(title='Night Stalker', href='/tips/night_stalker')
+            a.herolist__hero__link(title='Night Stalker', href='/tips/night_stalker.html')
               span.herolist__hero__name Night Stalker
           li.herolist__hero.nyx_assassin
-            a.herolist__hero__link(title='Nyx Assassin', href='/tips/nyx_assassin')
+            a.herolist__hero__link(title='Nyx Assassin', href='/tips/nyx_assassin.html')
               span.herolist__hero__name Nyx Assassin
           li.herolist__hero.ogre_magi
             a.herolist__hero__link(title='Ogre Magi', href='/tips/ogre_magi.html')
@@ -464,3 +424,10 @@ html
           li.herolist__hero.zeus
             a.herolist__hero__link(title='Zeus', href='/tips/zeus.html')
               span.herolist__hero__name Zeus
+//- script(type='text/javascript', src='./assets/scripts/lib/lib.min.js')
+//- script(type='text/javascript', src='./assets/scripts/hero-input.js')
+//- script(type='text/javascript', src='./assets/scripts/hero-list.js')
+//- script(type='text/javascript', src='./assets/scripts/hero-loader.js')
+//- script(type='text/javascript', src='./assets/scripts/hero-state.js')
+//- script(type='text/javascript', src='./assets/scripts/hero-mini.js')
+//- script(type='text/javascript', src='./assets/scripts/main.js')

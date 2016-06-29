@@ -76,20 +76,21 @@
 
   var anticipationTimer = null;
 
-  $('.herolist').on('mouseenter', '.herolist__hero__link', function (e) {
-    clearTimeout(anticipationTimer);
+  // $('.herolist').on('mouseenter', '.herolist__hero__link', function (e) {
+  //   clearTimeout(anticipationTimer);
 
-    anticipationTimer = setTimeout(function () {
-        loader.preload($(e.currentTarget).find('.herolist__hero__name').html())
-    }, 600);
-  });
+  //   anticipationTimer = setTimeout(function () {
+  //       loader.preload($(e.currentTarget).find('.herolist__hero__name').html())
+  //   }, 600);
+  // });
 
-  $('.herolist').on('mouseleave', '.herolist__hero__link', function (e) {
-      clearTimeout(anticipationTimer);
-  });
+  // $('.herolist').on('mouseleave', '.herolist__hero__link', function (e) {
+  //     clearTimeout(anticipationTimer);
+  // });
 
   $('.herolist').on('click', '.herolist__hero__link', function (e) {
     e.preventDefault();
+    console.log("test")
     clearTimeout(anticipationTimer);
     loader.load($(e.currentTarget).find('.herolist__hero__name').html());
     $('body, html').scrollTop(0);
