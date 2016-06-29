@@ -6000,26 +6000,6 @@ button.close {
     color: #1087dd;
     background-color: #fff; }
 
-.btn-steam {
-  background-color: #444444;
-  color: #fff;
-  margin-top: 5px;
-  background-color: #444444;
-  border-color: rgba(0, 0, 0, 0.2);
-}
-
-.btn-steam:focus, .btn-steam.focus {
-    color: #fff;
-    background-color: #2b2b2b;
-    border-color: rgba(0, 0, 0, 0.2);
-}
-
-.btn-steam:hover {
-    color: #fff;
-    background-color: #2b2b2b;
-    border-color: rgba(0, 0, 0, 0.2);
-}
-
 .btn-facebook {
   background-color: #3b5998;
   color: #fff;
@@ -9070,3 +9050,20 @@ textarea {
 
 .fa {
   margin-right: 6px; }
+
+.btn-steam {
+  background-color: #444444;
+  color: #fff;
+  margin-top: 5px;
+  background-color: #444444;
+  border-color: rgba(0, 0, 0, 0.2); }
+
+.btn-steam:focus, .btn-steam.focus {
+  color: #fff;
+  background-color: #2b2b2b;
+  border-color: rgba(0, 0, 0, 0.2); }
+
+.btn-steam:hover {
+  color: #fff;
+  background-color: #2b2b2b;
+  border-color: rgba(0, 0, 0, 0.2); }

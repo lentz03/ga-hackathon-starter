@@ -80,13 +80,13 @@ html
     .wrapper
       #inputline
         form#heroinput-form(action='/', method='get')
-          span#hero-input-quote-start
+          //- span#hero-input-quote-start
           span#heroinput
             input.typeahead(type='text', placeholder='Hero Name', autocomplete='off')
             span#randomhero
               a(href='#', title='Random Hero (no bonus gold)') 
             span.arrow
-          span#hero-input-quote-end
+          //- span#hero-input-quote-end
           input(type='submit', value='', style='visibility: hidden; position: absolute; top: -9999px; left: -9999px; width: 1px; height: 1px; overflow: hidden')
         script.
           !function (document) {
